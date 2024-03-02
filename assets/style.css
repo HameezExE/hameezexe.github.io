@@ -99,6 +99,17 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--themePrimary);
+}
+
+h5 {
+  font-size: 2.8rem;
+  font-weight: 550;
+}
+
 #circle1 {
   position: absolute;
   top: -35vh;
@@ -196,9 +207,16 @@ header button {
 .devBtn {
   color: #fff;
   padding: 8px 25px;
-  border: rgba(102, 16, 242, 0.16) solid;
+  background-color: rgba(102, 16, 242, 0.16);
+  border: var(--themePrimary) solid;
   border-radius: 12px;
+  display: flex;
+  align-items: center;
   margin-bottom: 27px;
+}
+
+.devBtn i {
+  margin-right: 8px;
 }
 
 .heroText {
@@ -263,4 +281,32 @@ header button {
 
 .fa-chevron-down {
   font-size: 1.7rem;
+}
+
+#interests {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.toolsBtn {
+  border-radius: 12px;
+  border: var(--themePrimary) solid;
+  color: var(--darkText);
+  margin-right: 10px;
+  padding: 8px 25px;
+}
+
+.toolsBtn i {
+  margin-right: 8px;
+}
+
+.intRow {
+  background-color: var(--darkBgSecondary);
+  border-radius: 15px;
+}
+
+footer {
+  background-color: var(--darkBgSecondary);
+  text-align: center;
 }
