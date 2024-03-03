@@ -119,6 +119,7 @@ h5 {
 
 #hero {
   min-height: 100vh;
+  margin-bottom: 80px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -276,6 +277,7 @@ header button {
   color: #fff;
   background-color: var(--themePrimary);
   border-radius: 12px;
+  font-weight: 550;
   margin: 0 auto 10px auto;
 }
 
@@ -284,26 +286,84 @@ header button {
 }
 
 #interests {
+  align-items: center;
   display: flex;
+  min-height: 80vh;
+  justify-content: space-between;
   width: 80%;
   margin: auto;
 }
 
+#circle3 {
+  position: absolute;
+  left: 0px;
+}
+
+#interests h5 {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.intText {
+  flex-basis: 35%;
+}
+
 .toolsBtn {
   border-radius: 12px;
-  border: var(--themePrimary) solid;
+  border: var(--themePrimary) 2px solid;
   color: var(--darkText);
   margin-right: 10px;
-  padding: 8px 25px;
+  margin-top: 20px;
+  padding: 6px 22px;
 }
 
 .toolsBtn i {
   margin-right: 8px;
+  font-size: 1.6rem;
+}
+
+.intContent {
+  flex-basis: 50%;
 }
 
 .intRow {
   background-color: var(--darkBgSecondary);
   border-radius: 15px;
+  font-size: 1.5rem;
+  padding: 20px 30px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+#interests h6 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.intRow p {
+  margin-bottom: 6px;
+}
+
+.intRow img {
+  object-fit: contain;
+  margin-right: 25px;
+}
+
+.intTools {
+  text-align: center;
+  position: relative;
+  bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.intTools span {
+  background-color: var(--themePrimary);
+  border-radius: 5px;
+  display: inline-block;
+  height: 26px;
+  margin-right: 6px;
+  width: 26px;
 }
 
 footer {
