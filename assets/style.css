@@ -366,6 +366,17 @@ header button {
   width: 26px;
 }
 
+#webDevRow {
+  padding: 0;
+}
+
+.webDevHigh {
+  display: flex;
+  background-color: rgba(102, 16, 242, 0.1);
+  border-radius: 15px;
+  padding: 20px 30px;
+}
+
 footer {
   background-color: var(--darkBgSecondary);
   text-align: center;
