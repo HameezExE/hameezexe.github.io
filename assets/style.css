@@ -25,8 +25,8 @@
 }
 
 ::selection {
-  background-color: #b3d4fc;
-  color: #000000;
+  background-color: var(--themePrimary);
+  color: var(--darkText);
   text-shadow: none;
 }
 
@@ -401,7 +401,7 @@ header button {
   height: 60px;
   display: flex;
   width: 60px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 20px auto;
   background-color: rgba(102, 16, 242, 0.5);
 }
 
@@ -413,13 +413,13 @@ header button {
   display: flex;
   width: 75%;
   margin: auto;
-  overflow-x: scroll;
+  overflow-x: hidden;
   scroll-snap-type: x mandatory;
   white-space: nowrap;
   text-align: center;
   cursor: pointer;
   user-select: none;
-  min-height: 400px;
+  min-height: 375px;
 }
 
 .eduCard {
@@ -492,6 +492,12 @@ header button {
 .expText {
   width: 40%;
   padding-left: 40px;
+  margin-left: 100px;
+}
+
+.expText h5 {
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .expCard {
@@ -501,6 +507,23 @@ header button {
   margin-right: 40px;
   border-radius: 20px;
   flex-shrink: 0;
+}
+
+.btnProjects {
+  background-color: var(--themePrimary);
+  color: #fff;
+  padding: 7px 25px;
+  border-radius: 30px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#experience .fa-square-github {
+  font-size: 2rem;
+  margin-right: 10px;
 }
 
 #connect {
@@ -527,7 +550,7 @@ header button {
 }
 
 .connectText {
-  width: 55%;
+  width: 45%;
   margin: auto;
 }
 
@@ -544,7 +567,7 @@ header button {
 
 #connect img {
   position: absolute;
-  right: 10%;
+  right: 14%;
   height: 300px;
 }
 
@@ -552,6 +575,37 @@ footer {
   background-image: url(./wave.svg);
   text-align: center;
   font-size: 1.5rem;
+}
+
+footer .fa-code,
+footer .fa-wand-magic-sparkles {
+  font-size: 1.3rem;
+}
+
+.fa-heartbeat {
+  color: #be1010;
+  animation: beat 2s ease infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
 }
 
 footer p {
