@@ -7,7 +7,10 @@
     <title>Muhammadh Hameez | Web Developer, Designer, Technophile.</title>
     <meta
       name="description"
-      content="Self-Taught Web Developer, Designer, Technophile from Sri Lanka. Creating a better Web with an impactful UI/UX & SEO while taking on challenges is my thing. Welcome to my Home within the Cyberspace!"
+      content="Self-taught web developer, designer & technophile from Sri Lanka,
+      with 20 solar revolutions fueling my passion. I transform ideas
+      into impactful web experiences by blending my expertise in coding,
+      UI/UX design & digital marketing."
     />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,22 +28,49 @@
     <img src="./assets/circle1.svg" alt="" id="circle1" />
     <main>
       <section id="hero">
-        <header>
-          <a href=""
-            ><h1>M<span class="H">H</span></h1></a
-          >
-          <nav>
-            <ul>
-              <li class="active"><a href="">About</a></li>
-              <li><a href="">Interest</a></li>
-              <li><a href="">Education</a></li>
-              <li><a href="">Experience</a></li>
-            </ul>
-          </nav>
-          <button>
-            <i class="fa-solid fa-bolt-lightning"></i>&nbsp; Connect
-          </button>
-        </header>
+        <div id="headerContainer">
+          <header>
+            <a href=""
+              ><h1>M<span class="H">H</span></h1></a
+            >
+            <nav>
+              <ul>
+                <li class="active"><a href="">About</a></li>
+                <li><a href="">Interests</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Projects</a></li>
+                <label for="theme" class="theme" id="lightModeToggle">
+                  <span class="themeToggleWrap">
+                    <input
+                      id="theme"
+                      class="themeToggle"
+                      type="checkbox"
+                      role="switch"
+                      name="theme"
+                      value="dark"
+                    />
+                    <span class="themeFill"></span>
+                    <span class="themeIcon">
+                      <span class="themeIconPart"></span>
+                      <span class="themeIconPart"></span>
+                      <span class="themeIconPart"></span>
+                      <span class="themeIconPart"></span>
+                      <span class="themeIconPart"></span>
+                      <span class="themeIconPart"></span>
+                      <span class="themeIconPart"></span>
+                      <span class="themeIconPart"></span>
+                      <span class="themeIconPart"></span>
+                    </span>
+                  </span>
+                </label>
+              </ul>
+            </nav>
+            <button>
+              <i class="fa-solid fa-bolt-lightning"></i>&nbsp; Connect
+            </button>
+          </header>
+        </div>
         <div class="heroContent">
           <div class="social socialCol">
             <a href=""
@@ -65,21 +95,22 @@
               <h3>Web Developer</h3>
             </button>
             <h2 class="tagline">
-              Hola! I’m <span class="highlighted">Hameez</span> 👋 <br />
+              Howdy! I’m <span class="highlighted">Hameez</span> 👋 <br />
               Crafting
               <span class="highlighted">Elevated Web Experiences </span> <br />
               That Matters.
             </h2>
             <p>
-              Self-Taught Web Developer, Designer, Tech Enthusiast from Sri
-              Lanka who’s completed 19 revolutions around the Sun. I craft
-              Impactful Web/App Experiences with the power of Code, UI/UX & SEO.
+              Self-taught web developer, designer & technophile from Sri Lanka,
+              with 20 solar revolutions fueling my passion. I transform ideas
+              into impactful web experiences by blending my expertise in coding,
+              UI/UX design & digital marketing.
             </p>
           </div>
           <div>
-            <!-- <div class="profileDec" id="dec1"></div> -->
+            <div class="profileDec" id="dec1"></div>
             <img src="assets/Profile.jpg" alt="" />
-            <!-- <div class="profileDec" id="dec2"></div> -->
+            <div class="profileDec" id="dec2"></div>
           </div>
         </div>
         <button class="heroCTA">
@@ -93,10 +124,12 @@
           <h4>INTERESTS</h4>
           <h5>What I Enjoy Doing.</h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-            bibendum erat,bibendum erat, eget ultricies felicumsan turpis eget
-            ultricies felicumsan turpis. <br /><br />
-            Built with the best tools in the shed:
+            When I'm not convincing my code to cooperate, I spend time
+            exploring, learning & experimenting with new technologies.
+            <br /><br />I thrive on crafting robust websites, designing
+            intuitive interfaces & strategizing digital marketing campaigns—all
+            built with the best tools in the shed:
+            <br />
           </p>
           <button class="toolsBtn">
             <i class="fa-solid fa-code"></i>VSCode
@@ -109,15 +142,29 @@
           </button>
         </div>
         <div class="intContent">
+          <div class="intRow">
+            <img src="./assets/design.png" alt="" />
+            <div>
+              <h6>Digital Product Design</h6>
+              <p>
+                User-centric digital designs captivate users and boost product
+                interaction. My designs focus on making the user feel right at
+                home to deliver impactful results.
+              </p>
+            </div>
+          </div>
+          <div class="intTools">
+            <span><i class="fa-brands fa-figma"></i></span>
+          </div>
           <div class="intRow" id="webDevRow">
             <div class="webDevHigh">
               <img src="./assets/webdev.png" alt="" />
               <div>
                 <h6>Web Development</h6>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  et bibendum erat,bibendum erat, eget ultricies felicumsan
-                  turpis
+                  I craft diverse websites, from informational to complete
+                  e-commerce solutions, using custom code, frameworks or
+                  WordPress tailored to project needs.
                 </p>
               </div>
             </div>
@@ -131,126 +178,167 @@
             <span><i class="fa-brands fa-wordpress"></i></span>
           </div>
           <div class="intRow">
-            <img src="./assets/design.png" alt="" />
-            <div>
-              <h6>Design</h6>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                et bibendum erat,bibendum erat, eget ultricies felicumsan turpis
-              </p>
-            </div>
-          </div>
-          <div class="intTools">
-            <span><i class="fa-brands fa-figma"></i></span>
-          </div>
-          <div class="intRow">
             <img src="./assets/digital.png" alt="" />
             <div>
               <h6>Digital Marketing</h6>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                et bibendum erat,bibendum erat, eget ultricies felicumsan turpis
+                Every business thrives on a loyal audience. I strategize and
+                execute digital marketing campaigns that attract targeted
+                audiences, driving meaningful conversions.
               </p>
             </div>
           </div>
           <div class="intTools">
+            <span><i class="fa-brands fa-google"></i></span>
             <span><i class="fa-brands fa-square-facebook"></i></span>
+            <span><i class="fa-brands fa-square-instagram"></i></span>
+            <span><i class="fa-brands fa-x-twitter"></i></span>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <h5>What I've Done.</h5>
+        <div class="timeLine">
+          <div class="expRange">
+            <button class="expBtn">May 2024 - Present</button>
+            <img src="./assets/hirdramaniLogo.png" alt="" />
+          </div>
+          <div class="timeLineMiddle">
+            <div class="timeLineCircle"></div>
+          </div>
+          <div class="timeLineComponent timeLineContent right">
+            <h6>Junior Executive IT at Hirdaramani Group</h6>
+            <p></p>
+            <p>
+              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
+              Developed and maintained e-commerce websites, ensuring optimal
+              performance and user experience. <br /><br />
+              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
+              Assisted in the successful migration of a live e-commerce website,
+              coordinating with the team to ensure a smooth transition and
+              minimal downtime. <br /><br />
+              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
+              Executed digital marketing initiatives to enhance brand visibility
+              and drive online engagement.
+            </p>
+          </div>
+          <div class="timeLineComponent timeLineContent left">
+            <h6>IT Intern at Hirdaramani Group</h6>
+            <p>
+              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
+              Developed and maintained e-commerce websites using WordPress and
+              WooCommerce, ensuring smooth functionality and user experience.
+              <br /><br />
+              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
+              Gained hands-on experience in Canva and Photoshop, enhancing
+              skills in graphic design. <br /><br />
+              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
+              Assisted in digital marketing campaigns on Facebook and Instagram,
+              contributing to boosting online presence and engagement.
+            </p>
+          </div>
+          <div class="timeLineMiddle mid">
+            <div class="timeLineCircle"></div>
+          </div>
+          <div class="expRange">
+            <button class="expBtn">Feb 2024 - Apr 2024</button>
+            <img src="./assets/hirdramaniLogo.png" alt="" />
+          </div>
+
+          <div class="expRange">
+            <button class="expBtn">Jan 2021 - Jun 2021</button>
+            <img src="./assets/friendsofflarumLogo.png" alt="" />
+          </div>
+
+          <div class="timeLineMiddle">
+            <div class="timeLineCircle"></div>
+          </div>
+          <div class="timeLineComponent timeLineContent right">
+            <h6>QA Tester for Friends of Flarum</h6>
+            <p>
+              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
+              Assisted the Friends of Flarum open-source project, dedicated to
+              creating extensions for the Flarum community framework.
+              <br /><br />
+              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
+              Actively tested various extensions to ensure they met quality
+              standards for functionality, performance, and compatibility.
+              <br /><br />
+              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
+              Worked with developers to identify and resolve bugs, contributing
+              to the overall enhancement of the extensions.
+            </p>
           </div>
         </div>
       </section>
       <section id="education">
         <h5>My <span class="highlighted">Education.</span></h5>
-        <div id="timeLineHR">
-          <i class="fa-solid fa-caret-left"></i>
-          <hr />
-          <i class="fa-solid fa-caret-right"></i>
+        <div class="eduCard">
+          <div class="eduCol1">
+            <div class="eduImgCont">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <p>2024 - Present</p>
+          </div>
+          <div class="eduCol2">
+            <h6>CS50: Into to Computer Science by Harvard University</h6>
+            <p>
+              Currently following CS50: Introduction to Computer Science course
+              provided by Harvard University. Through engaging lectures and
+              hands-on problem sets, I'm exploring topics such as algorithms,
+              data structures, and software engineering principles.
+            </p>
+          </div>
         </div>
-        <div class="eduContainer">
-          <div class="eduCol">
-            <div class="eduIconCon">
-              <div class="eduIcon"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="eduCard">
+          <div class="eduCol1">
+            <div class="eduImgCont">
+              <i class="fa-solid fa-building-columns"></i>
             </div>
-            <div class="eduCard">
-              <h6>Open Learning by UoM</h6>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                et bibendum erat,bibendum erat, eget ultricies felicumsan turpis
-                eget ultricies felicumsan turpis
-              </p>
-            </div>
+            <p>2023 - Present</p>
           </div>
-          <div class="eduCol">
-            <div class="eduIconCon">
-              <div class="eduIcon"><i class="fa-solid fa-laptop-code"></i></div>
-            </div>
-            <div class="eduCard">
-              <h6>Open Learning by UoM</h6>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                et bibendum erat,bibendum erat, eget ultricies felicumsan turpis
-                eget ultricies felicumsan turpis
-              </p>
-            </div>
+          <div class="eduCol2">
+            <h6>Full Stack Developer course by CODL University of Moratuwa</h6>
+            <p>
+              Completed Web Design for Beginners, Front-End Web Development &
+              Python Programming course modules offered by Centre for Open &
+              Distance Learning University of Moratuwa. Currently, following the
+              Server-side web programming module.
+            </p>
           </div>
-          <div class="eduCol">
-            <div class="eduIconCon">
-              <div class="eduIcon"><i class="fa-solid fa-laptop-code"></i></div>
+        </div>
+        <div class="eduCard">
+          <div class="eduCol1">
+            <div class="eduImgCont">
+              <i class="fa-solid fa-school"></i>
             </div>
-            <div class="eduCard">
-              <h6>Open Learning by UoM</h6>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                et bibendum erat,bibendum erat, eget ultricies felicumsan turpis
-                eget ultricies felicumsan turpis
-              </p>
-            </div>
+            <p>2014 - 2023</p>
           </div>
-          <div class="eduCol">
-            <div class="eduIconCon">
-              <div class="eduIcon"><i class="fa-solid fa-laptop-code"></i></div>
-            </div>
-            <div class="eduCard">
-              <h6>Open Learning by UoM</h6>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                et bibendum erat,bibendum erat, eget ultricies felicumsan turpis
-                eget ultricies felicumsan turpis
-              </p>
-            </div>
-          </div>
-          <div class="eduCol">
-            <div class="eduIconCon">
-              <div class="eduIcon"><i class="fa-solid fa-laptop-code"></i></div>
-            </div>
-            <div class="eduCard">
-              <h6>Open Learning by UoM</h6>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                et bibendum erat,bibendum erat, eget ultricies felicumsan turpis
-                eget ultricies felicumsan turpis
-              </p>
-            </div>
+          <div class="eduCol2">
+            <h6>Secondary & Advanced Education at Thurstan College</h6>
+            <p>
+              Achieved 9 As in the G.C.E. O/L Exam (2019), with optional
+              subjects including ICT, Commerce, and English Literature.
+              Completed the G.C.E. A/L Exam (2023) in the Physical Science
+              stream, achieving B in Physics, B in Chemistry, and C in
+              Mathematics.
+            </p>
           </div>
         </div>
       </section>
-      <section id="experience">
-        <div class="expCont">
-          <div class="expCard"></div>
-          <div class="expCard"></div>
-          <div class="expCard"></div>
+      <section id="projects">
+        <div class="proCont">
+          <div class="proCard"></div>
+          <div class="proCard"></div>
+          <div class="proCard"></div>
         </div>
-        <div class="expText">
-          <h4>EXPERIENCE</h4>
-          <h5>What I've Done.</h5>
+        <div class="proText">
+          <h4>Projects</h4>
+          <h5>Some of My Work.</h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-            bibendum erat,bibendum erat, eget ultricies felicumsan turpis eget
-            ultricies felicumsan turpis
+            From concept to execution, these are some of my projects that
+            defines my journey. Each one represents unique adventures where I've
+            tackled challenges & delivered impactful solutions.
           </p>
           <button class="btnProjects">
             <i class="fa-brands fa-square-github"></i>Explore
@@ -259,17 +347,21 @@
       </section>
       <section id="connect">
         <div class="connectText">
-          <h5>Let's <span class="highlighted">Connect</span></h5>
+          <h5>Let's <span class="highlighted">Connect!</span></h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-            bibendum erat, eget ultricies felis. Fusce accumsan feugiat odio eu
-            efficitur. Sed et turpis pharetra
+            Got an idea to brainstorm, need a partner in crime for your next
+            project, or just in the mood for some tech banter? Let's build
+            something awesome together!
           </p>
+          <div></div>
+          <div class="mail">
+            <i class="fa-solid fa-phone-volume"></i>
+            <h6>+94 70 440 4505</h6>
+          </div>
           <div class="mail">
             <i class="fa-solid fa-inbox"></i>
             <h6>hameezexe@gmail.com</h6>
           </div>
-          <h6>Reach out to me on:</h6>
           <div class="social">
             <a href=""
               ><span><i class="fa-brands fa-linkedin"></i></span
@@ -290,8 +382,7 @@
     </main>
     <footer>
       <p>
-        Brought to Life with <i class="fas fa-heartbeat"></i> and a Touch of
-        <i class="fa-solid fa-wand-magic-sparkles"></i> by
+        Crafted one pixel at a time with <i class="fas fa-heartbeat"></i> by
         <span class="highlighted">Hameez.</span>
         <br />
         <a
@@ -299,11 +390,11 @@
           target="_blank"
           >Unveil</a
         >
-        the ✨ Sorcery Behind this Website.
+        the ✨ sorcery behind this website.
       </p>
     </footer>
     <script>
-      const slider = document.querySelector(".eduContainer");
+      const slider = document.querySelector(".proCont");
       let isDown = false;
       let startX;
       let scrollLeft;
@@ -329,6 +420,32 @@
         const walk = (x - startX) * 1;
         slider.scrollLeft = scrollLeft - walk;
         console.log(walk);
+      });
+
+      let lightMode = localStorage.getItem("lightMode");
+      const lightModeToggle = document.querySelector("#lightModeToggle");
+
+      const enableLightMode = () => {
+        document.body.classList.add("lightMode");
+        localStorage.setItem("lightMode", "enabled");
+      };
+
+      const disableLightMode = () => {
+        document.body.classList.remove("lightMode");
+        localStorage.setItem("lightMode", "disabled");
+      };
+
+      if (lightMode === "enabled") {
+        enableLightMode();
+      }
+
+      lightModeToggle.addEventListener("click", () => {
+        lightMode = localStorage.getItem("lightMode");
+        if (lightMode !== "enabled") {
+          enableLightMode();
+        } else {
+          disableLightMode();
+        }
       });
     </script>
   </body>
