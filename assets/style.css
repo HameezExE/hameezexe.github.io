@@ -511,7 +511,7 @@ header button {
 #circle3 {
   position: absolute;
   left: 0px;
-  z-index: -1;
+  z-index: -3;
 }
 
 #interests h5 {
@@ -1015,6 +1015,9 @@ footer a {
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 54%;
+  }
   body {
     font-size: 1.5rem;
   }
@@ -1030,5 +1033,62 @@ footer a {
   }
   nav ul {
     display: none;
+  }
+  .heroText div {
+    flex-direction: column-reverse;
+  }
+  .socialCol {
+    display: none;
+  }
+  .heroContent {
+    flex-direction: column-reverse;
+  }
+
+  .heroContent img {
+    height: 200px;
+  }
+
+  .heroCTA {
+    display: none;
+  }
+  #interests {
+    flex-direction: column;
+  }
+  .intContent {
+    margin-top: 50px;
+  }
+  .experience .item {
+    padding-right: 40px;
+  }
+  .eduCard {
+    flex-direction: column;
+  }
+  .eduCol1 {
+    border-right: none;
+    border-bottom: var(--themePrimary) solid 2px;
+  }
+  #projects {
+    flex-direction: column-reverse;
+  }
+  .proText {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  #dec1,
+  #dec2 {
+    display: none;
+  }
+  .heroContent img {
+    height: 200px;
+    margin: 50px 0 20px 0;
+  }
+  .heroText {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
