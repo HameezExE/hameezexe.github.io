@@ -32,10 +32,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/9c2f41d45d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </head>
   <body>
     <img src="./assets/circle1.svg" alt="" id="circle1" />
@@ -85,7 +93,9 @@
           </header>
         </div>
         <div class="heroContent">
-          <div class="social socialCol">
+          <div
+            class="social socialCol animate__animated animate__fadeInLeft animate__slower"
+          >
             <a href=""
               ><span><i class="fa-solid fa-envelope-open"></i></span
             ></a>
@@ -144,13 +154,17 @@
             built with the best tools in the shed:
             <br />
           </p>
-          <button class="toolsBtn">
+          <button class="toolsBtn wow animate__animated animate__zoomIn">
             <i class="fa-solid fa-code"></i>VSCode
           </button>
-          <button class="toolsBtn">
+          <button
+            class="toolsBtn wow animate__animated animate__zoomIn animate__delay-1s"
+          >
             <i class="fa-brands fa-git-alt"></i>Git
           </button>
-          <button class="toolsBtn">
+          <button
+            class="toolsBtn wow animate__animated animate__zoomIn animate__delay-2s"
+          >
             <i class="fa-brands fa-linux"></i>Linux
           </button>
         </div>
@@ -210,83 +224,112 @@
         </div>
       </section>
       <section id="experience">
-        <h5>What I've Done.</h5>
-        <div class="timeLine">
-          <div class="expRange">
-            <button class="expBtn">May 2024 - Present</button>
-            <img src="./assets/hirdramaniLogo.png" alt="" />
-          </div>
-          <div class="timeLineMiddle">
-            <div class="timeLineCircle"></div>
-          </div>
-          <div class="timeLineComponent timeLineContent right">
+        <h5>My <span class="highlighted">Track Record.</span></h5>
+        <div class="experience">
+          <div class="item">
             <h6>Junior Executive IT at Hirdaramani Group</h6>
-            <p></p>
-            <p>
-              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
-              Developed and maintained e-commerce websites, ensuring optimal
-              performance and user experience. <br /><br />
-              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
-              Assisted in the successful migration of a live e-commerce website,
-              coordinating with the team to ensure a smooth transition and
-              minimal downtime. <br /><br />
-              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
-              Executed digital marketing initiatives to enhance brand visibility
-              and drive online engagement.
-            </p>
+            <div class="jobInfo">
+              <button class="expBtn">May 2024 - Present</button>
+              <img src="./assets/hirdramaniLogo.png" class="expImg" alt="" />
+            </div>
+            <div>
+              <p>
+                <i
+                  class="fa-solid fa-bolt-lightning"
+                  style="color: #6610f2"
+                ></i>
+                Developed and maintained e-commerce websites, ensuring optimal
+                performance and user experience. <br /><br />
+                <i
+                  class="fa-solid fa-bolt-lightning"
+                  style="color: #6610f2"
+                ></i>
+                Assisted in the successful migration of a live e-commerce
+                website, coordinating with the team to ensure a smooth
+                transition and minimal downtime. <br /><br />
+                <i
+                  class="fa-solid fa-bolt-lightning"
+                  style="color: #6610f2"
+                ></i>
+                Executed digital marketing initiatives to enhance brand
+                visibility and drive online engagement.
+              </p>
+            </div>
           </div>
-          <div class="timeLineComponent timeLineContent left">
+          <div class="item">
             <h6>IT Intern at Hirdaramani Group</h6>
-            <p>
-              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
-              Developed and maintained e-commerce websites using WordPress and
-              WooCommerce, ensuring smooth functionality and user experience.
-              <br /><br />
-              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
-              Gained hands-on experience in Canva and Photoshop, enhancing
-              skills in graphic design. <br /><br />
-              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
-              Assisted in digital marketing campaigns on Facebook and Instagram,
-              contributing to boosting online presence and engagement.
-            </p>
+            <div class="jobInfo">
+              <button class="expBtn">Feb 2024 - Apr 2024</button>
+              <img src="./assets/hirdramaniLogo.png" class="expImg" alt="" />
+            </div>
+            <div>
+              <p>
+                <i
+                  class="fa-solid fa-bolt-lightning"
+                  style="color: #6610f2"
+                ></i>
+                Developed and maintained e-commerce websites using WordPress and
+                WooCommerce, ensuring smooth functionality and user experience.
+                <br /><br />
+                <i
+                  class="fa-solid fa-bolt-lightning"
+                  style="color: #6610f2"
+                ></i>
+                Gained hands-on experience in Canva and Photoshop, enhancing
+                skills in graphic design. <br /><br />
+                <i
+                  class="fa-solid fa-bolt-lightning"
+                  style="color: #6610f2"
+                ></i>
+                Assisted in digital marketing campaigns on Facebook and
+                Instagram, contributing to boosting online presence and
+                engagement.
+              </p>
+            </div>
           </div>
-          <div class="timeLineMiddle mid">
-            <div class="timeLineCircle"></div>
-          </div>
-          <div class="expRange">
-            <button class="expBtn">Feb 2024 - Apr 2024</button>
-            <img src="./assets/hirdramaniLogo.png" alt="" />
-          </div>
-
-          <div class="expRange">
-            <button class="expBtn">Jan 2021 - Jun 2021</button>
-            <img src="./assets/friendsofflarumLogo.png" alt="" />
-          </div>
-
-          <div class="timeLineMiddle">
-            <div class="timeLineCircle"></div>
-          </div>
-          <div class="timeLineComponent timeLineContent right">
+          <div class="item bottom">
             <h6>QA Tester for Friends of Flarum</h6>
-            <p>
-              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
-              Assisted the Friends of Flarum open-source project, dedicated to
-              creating extensions for the Flarum community framework.
-              <br /><br />
-              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
-              Actively tested various extensions to ensure they met quality
-              standards for functionality, performance, and compatibility.
-              <br /><br />
-              <i class="fa-solid fa-bolt-lightning" style="color: #6610f2"></i>
-              Worked with developers to identify and resolve bugs, contributing
-              to the overall enhancement of the extensions.
-            </p>
+            <div class="jobInfo">
+              <button class="expBtn">Jan 2021 - Jun 2021</button>
+              <img
+                src="./assets/friendsofflarumLogo.png"
+                class="expImg"
+                alt=""
+              />
+            </div>
+            <div>
+              <p>
+                <i
+                  class="fa-solid fa-bolt-lightning"
+                  style="color: #6610f2"
+                ></i>
+                Assisted the Friends of Flarum open-source project, dedicated to
+                creating extensions for the Flarum community framework.
+                <br /><br />
+                <i
+                  class="fa-solid fa-bolt-lightning"
+                  style="color: #6610f2"
+                ></i>
+                Actively tested various extensions to ensure they met quality
+                standards for functionality, performance, and compatibility.
+                <br /><br />
+                <i
+                  class="fa-solid fa-bolt-lightning"
+                  style="color: #6610f2"
+                ></i>
+                Worked with developers to identify and resolve bugs,
+                contributing to the overall enhancement of the extensions.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <section id="education">
-        <h5>My <span class="highlighted">Education.</span></h5>
-        <div class="eduCard">
+        <img src="./assets/circle5.svg" alt="" id="circle5" />
+        <h5>What I've <span class="highlighted">Learnt.</span></h5>
+        <div
+          class="eduCard wow animate__animated animate__fadeInLeft animate__slow"
+        >
           <div class="eduCol1">
             <div class="eduImgCont">
               <i class="fa-solid fa-laptop-code"></i>
@@ -303,7 +346,9 @@
             </p>
           </div>
         </div>
-        <div class="eduCard">
+        <div
+          class="eduCard wow animate__animated animate__fadeInLeft animate__slow animate__delay-1s"
+        >
           <div class="eduCol1">
             <div class="eduImgCont">
               <i class="fa-solid fa-building-columns"></i>
@@ -320,7 +365,9 @@
             </p>
           </div>
         </div>
-        <div class="eduCard">
+        <div
+          class="eduCard wow animate__animated animate__fadeInLeft animate__slow animate__delay-2s"
+        >
           <div class="eduCol1">
             <div class="eduImgCont">
               <i class="fa-solid fa-school"></i>
@@ -341,15 +388,19 @@
       </section>
       <section id="projects">
         <div class="proCont">
-          <div class="proCard">
+          <div
+            class="proCard wow animate__animated animate__slideOutLeft animate__delay-1s"
+          >
             <img src="./assets/4ceylon.png" alt="" />
             <h6>4Celyon.LK (WIP)</h6>
             <p>
-              4Ceylon.LK - E-commerce site built with WooCommerce and WordPress,
-              offering streamlined online shopping experience.
+              E-commerce site built with WooCommerce and WordPress, offering
+              streamlined online shopping experience.
             </p>
           </div>
-          <div class="proCard">
+          <div
+            class="proCard wow animate__animated animate__slideOutLeft animate__delay-1s"
+          >
             <img src="./assets/Blog Mockup - Light.png" alt="" />
             <h6>Blog Mockup</h6>
             <p>
@@ -357,15 +408,18 @@
               options showcasing a clean layout.
             </p>
           </div>
-          <div class="proCard">
+          <div
+            class="proCard wow animate__animated animate__slideOutLeft animate__delay-1s"
+          >
             <img src="./assets/skillex.png" alt="" />
             <h6>SkilleX Community</h6>
             <p>
-              Skillex is a dynamic platform developed to bring together Sri
+              SkilleX is a dynamic platform developed to bring together Sri
               Lankan developers, designers, and tech enthusiasts.
             </p>
           </div>
         </div>
+        <img src="./assets/circle3.svg" id="circle4" />
         <div class="proText">
           <h4>Projects</h4>
           <h5>Some of My Work.</h5>
@@ -380,38 +434,49 @@
         </div>
       </section>
       <section id="connect">
-        <div class="connectText">
-          <h5>Let's <span class="highlighted">Connect!</span></h5>
-          <p>
-            Got an idea to brainstorm, need a partner in crime for your next
-            project, or just in the mood for some tech banter? Let's build
-            something awesome together!
-          </p>
-          <div></div>
-          <div class="mail">
-            <i class="fa-solid fa-phone-volume"></i>
-            <h6>+94 70 440 4505</h6>
+        <div class="conGlow"></div>
+        <div class="conCont">
+          <div class="connectText">
+            <h5>Let's <span class="highlighted">Connect!</span></h5>
+            <p>
+              Got an idea to brainstorm, need a partner in crime for your next
+              project, or just in the mood for some tech banter? Let's build
+              something awesome together!
+            </p>
+            <div></div>
+            <div class="mail">
+              <i class="fa-solid fa-phone-volume"></i>
+              <h6>+94 70 440 4505</h6>
+            </div>
+            <div class="mail">
+              <i class="fa-solid fa-inbox"></i>
+              <h6>hameezexe@gmail.com</h6>
+            </div>
+            <div class="social">
+              <a href=""
+                ><span
+                  class="wow animate__animated animate__zoomIn animate__zoomIn animate__fast"
+                  ><i class="fa-brands fa-linkedin"></i></span
+              ></a>
+              <a href=""
+                ><span
+                  class="wow animate__animated animate__zoomIn animate__zoomIn animate__fast animate__delay-1s"
+                  ><i class="fa-brands fa-github"></i></span
+              ></a>
+              <a href=""
+                ><span
+                  class="wow animate__animated animate__zoomIn animate__zoomIn animate__fast animate__delay-2s"
+                  ><i class="fa-brands fa-x-twitter"></i></span
+              ></a>
+              <a href=""
+                ><span
+                  class="wow animate__animated animate__zoomIn animate__zoomIn animate__fast animate__delay-3s"
+                  ><i class="fa-brands fa-discord"></i></span
+              ></a>
+            </div>
           </div>
-          <div class="mail">
-            <i class="fa-solid fa-inbox"></i>
-            <h6>hameezexe@gmail.com</h6>
-          </div>
-          <div class="social">
-            <a href=""
-              ><span><i class="fa-brands fa-linkedin"></i></span
-            ></a>
-            <a href=""
-              ><span><i class="fa-brands fa-github"></i></span
-            ></a>
-            <a href=""
-              ><span><i class="fa-brands fa-x-twitter"></i></span
-            ></a>
-            <a href=""
-              ><span><i class="fa-brands fa-discord"></i></span
-            ></a>
-          </div>
+          <img src="./assets/connect.svg" alt="" />
         </div>
-        <img src="./assets/connect.svg" alt="" />
       </section>
     </main>
     <footer>
@@ -424,7 +489,7 @@
           target="_blank"
           >Unveil</a
         >
-        the ✨ sorcery behind this website.
+        the ✨ sorcery behind this Website.
       </p>
     </footer>
     <script>

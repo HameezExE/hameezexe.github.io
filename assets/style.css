@@ -158,7 +158,8 @@ header {
   padding: 0 40px;
   margin: 20px auto 80px auto;
   backdrop-filter: blur(100px);
-  z-index: 999;
+  z-index: 100;
+  position: relative;
 }
 
 h1 {
@@ -440,7 +441,6 @@ header button {
 
 .heroText p {
   font-size: 1.6rem;
-  /* line-height: 2.4rem; */
   width: 80%;
 }
 
@@ -476,6 +476,20 @@ header button {
   border-radius: 12px;
   font-weight: 550;
   margin: 0 auto 10px auto;
+  animation: floatCTA 4s infinite ease-in-out;
+  z-index: -1;
+}
+
+@keyframes floatCTA {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 .fa-chevron-down {
@@ -535,6 +549,14 @@ header button {
   padding: 20px 30px;
   margin-bottom: 10px;
   display: flex;
+  position: fixed;
+  position: relative;
+  z-index: -2;
+}
+
+#circle5 {
+  position: absolute;
+  transform: translate(300px, -200px);
 }
 
 #interests h6,
@@ -560,7 +582,7 @@ header button {
   position: relative;
   bottom: 25px;
   font-size: 1.8rem;
-  z-index: 2;
+  z-index: -1;
 }
 
 .intTools span {
@@ -604,17 +626,12 @@ header button {
 }
 
 .expBtn {
-  border-radius: 30px;
+  border-radius: 9px;
   border: var(--themePrimary) 2px solid;
   color: var(--darkText);
-  padding: 6px 22px;
-  /* transform: rotate(270deg); */
-  align-self: baseline;
-}
-
-.expRange {
-  text-align: center;
-  margin: 0 50px 0 50px;
+  padding: 6px 18px;
+  width: 190px;
+  font-size: 1.4rem;
 }
 
 .design {
@@ -622,47 +639,77 @@ header button {
   align-items: center;
   justify-content: center;
 }
-
-.timeLine {
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.timeLineContent {
-  padding: 30px 45px;
-  background: var(--darkBgSecondary);
-  border-radius: 5px;
-  color: var(--darkText);
-  transition: 0.4s ease;
-  overflow-wrap: break-word !important;
-  margin: 1rem;
-  margin-bottom: 30px;
-}
-
-.timeLineContent h6 {
-  margin-bottom: 25px !important;
-}
-
-.timeLineContent p {
+.experience {
+  border-left: 4px solid var(--themeSecondary);
+  padding: 0 30px;
+  margin-left: 255px;
+  z-index: -1;
+  width: 72%;
   line-height: 1.2;
 }
 
-.timeLineContent i {
-  font-size: 1.4rem;
+.experience p {
+  margin-top: 20px;
 }
 
-.expRange img {
-  max-height: 140px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  margin: 15px auto auto auto;
+.expImg {
+  width: 150px;
+  border-radius: 15px;
+  margin: 20px 0 0 20px;
 }
 
+@media (max-width: 767px) {
+  .experience {
+    margin-left: 0;
+    padding-right: 0;
+  }
+}
+.experience .item {
+  position: relative;
+  margin-bottom: 40px;
+  background-color: var(--darkBgSecondary);
+  padding: 25px 0 25px 40px;
+  border-radius: 0 20px 20px 20px;
+}
+.experience .item::before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--darkBgPrimary);
+  border: 3px solid var(--themePrimary);
+}
+.experience .item::after {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--themePrimary);
+}
+.experience .jobInfo {
+  position: absolute;
+  left: -255px;
+  top: 0;
+}
+.experience .jobInfo .title {
+  color: #009688;
+}
+@media (max-width: 767px) {
+  .experience .jobInfo {
+    position: static;
+    margin-bottom: 1rem;
+  }
+}
+
+.experience .item.bottom {
+  margin-bottom: 0;
+}
 .timeLineComponent.right {
   border-radius: 0 25px 25px 25px;
 }
@@ -673,47 +720,6 @@ header button {
 
 .timeLineComponent {
   margin: 0px 30px 30px 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .timeLine {
-    display: grid;
-    grid-template-columns: 1fr 3px 1fr;
-  }
-  .timeLineMiddle {
-    position: relative;
-    background-image: linear-gradient(
-      45deg,
-      rgba(155, 93, 229, 1) 0%,
-      rgba(102, 16, 242, 1) 100%
-    );
-    width: 3px;
-    height: 100%;
-  }
-
-  .timeLineMiddle.mid {
-    background-image: linear-gradient(
-      45deg,
-      rgba(102, 16, 242, 1) 0%,
-      rgba(155, 93, 229, 1) 100%
-    );
-  }
-
-  .main-middle {
-    opacity: 0;
-  }
-
-  .timeLineCircle {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: var(--themePrimary);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
 }
 
 #education h5,
@@ -834,15 +840,84 @@ e {
   font-size: 2rem;
   margin-right: 10px;
 }
+#circle4 {
+  position: absolute;
+  right: 50px;
+}
 
 #connect {
-  background-color: var(--darkBgSecondary);
   border-radius: 20px;
   display: flex;
   text-align: center;
   margin: 0 auto 75px auto;
   padding: 30px 0;
   width: 75%;
+  height: 60vh;
+}
+
+.conCont,
+.conGlow {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 20px;
+  padding: 30px 0;
+  width: 75%;
+}
+
+.conCont {
+  display: flex;
+}
+
+.conGlow {
+  overflow: hidden;
+  /* Glow Blur */
+  filter: blur(20px);
+}
+
+.conCont:before,
+.conGlow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border color, change middle color*/
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    var(--themePrimary),
+    rgba(0, 0, 0, 0) 25%
+  );
+  /* change speed here */
+  animation: rotate 4s linear infinite;
+}
+
+.conCont:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: var(--darkBgSecondary);
+  /*box border radius*/
+  border-radius: 20px;
+}
+
+@keyframes rotate {
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
 }
 
 #connect h5,
@@ -880,7 +955,7 @@ e {
 
 #connect img {
   position: absolute;
-  right: 14%;
+  right: 2%;
   height: 300px;
 }
 
