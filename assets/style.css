@@ -479,6 +479,9 @@ header button {
   animation: floatCTA 4s infinite ease-in-out;
   z-index: -1;
 }
+.heroCTALink {
+  z-index: 0;
+}
 
 @keyframes floatCTA {
   0% {
@@ -508,6 +511,7 @@ header button {
 #circle3 {
   position: absolute;
   left: 0px;
+  z-index: -1;
 }
 
 #interests h5 {
@@ -557,6 +561,7 @@ header button {
 #circle5 {
   position: absolute;
   transform: translate(300px, -200px);
+  z-index: -1;
 }
 
 #interests h6,
@@ -843,6 +848,7 @@ e {
 #circle4 {
   position: absolute;
   right: 50px;
+  z-index: -1;
 }
 
 #connect {
