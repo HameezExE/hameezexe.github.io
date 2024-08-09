@@ -1022,6 +1022,9 @@ footer a {
   html {
     font-size: 54%;
   }
+  #circle1 {
+    top: 0px;
+  }
   body {
     font-size: 1.5rem;
   }
@@ -1038,6 +1041,18 @@ footer a {
   nav ul {
     display: none;
   }
+  .profileDec {
+    height: 160px;
+    width: 160px;
+  }
+
+  #dec1 {
+    transform: translate(-40px, px);
+  }
+
+  .devBtn {
+    margin-bottom: 30px;
+  }
   .heroText div {
     flex-direction: column-reverse;
   }
@@ -1046,6 +1061,8 @@ footer a {
   }
   .heroContent {
     flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
   }
 
   .heroContent img {
@@ -1058,10 +1075,10 @@ footer a {
 
   .taglineM {
     display: block;
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 4.2rem;
     font-weight: 600;
-    margin-bottom: 27px;
+    margin-bottom: 15px;
     text-align: center;
   }
 
@@ -1072,32 +1089,72 @@ footer a {
     align-items: center;
     text-align: center;
     text-align: justify;
-  }
-
-  .heroCTA {
-    display: none;
+    margin-bottom: 30px;
   }
   #interests {
     flex-direction: column;
+    text-align: center;
+  }
+  .intText h4,
+  .intText h5 {
+    text-align: center;
+  }
+  .intText p {
+    text-align: justify;
   }
   .intContent {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .experience .item {
     padding-right: 40px;
   }
+  .experience .item p {
+    text-align: justify;
+  }
+  .jobInfo {
+    text-align: center;
+    margin-right: auto;
+  }
+
+  .jobInfo img {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .eduCard {
-    flex-direction: column;
+    padding: 15px 20px;
+    width: 80%;
   }
   .eduCol1 {
-    border-right: none;
-    border-bottom: var(--themePrimary) solid 2px;
+    text-align: center;
   }
+
   #projects {
     flex-direction: column-reverse;
   }
   .proText {
     width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 50px;
+  }
+  .proCont {
+    width: 100%;
+  }
+  .btnProjects {
+    display: none;
+  }
+  .btnProjectsM {
+    background-color: var(--themePrimary);
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 30px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
   }
   #circle5 {
     display: none;
@@ -1111,6 +1168,44 @@ footer a {
   }
   .heroContent img {
     height: 200px;
-    margin: 50px 0 20px 0;
+    margin: 30px 0 15px 0;
+  }
+  .toolsBtn {
+    margin-right: 4px;
+    padding: 6px 20px;
+  }
+  .intRow,
+  .webDevHigh {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intRow img {
+    width: 100px;
+    margin: auto;
+  }
+
+  .eduCard {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  .eduCol1 {
+    border-right: none;
+    padding-right: 0px;
+    border-bottom: var(--themePrimary) solid 2px;
+    width: 120px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+  .eduCol1 p {
+    font-size: 1.8rem;
+  }
+  .eduCol2 {
+    margin-left: 0px;
+    text-align: justify;
+  }
+  .eduCol2 h6 {
+    text-align: center;
+    margin-bottom: 12px !important;
   }
 }
