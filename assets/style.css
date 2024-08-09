@@ -844,7 +844,9 @@ e {
   align-items: center;
   margin-top: 20px;
 }
-
+.btnProjectsM {
+  display: none;
+}
 #projects .fa-square-github {
   font-size: 2rem;
   margin-right: 10px;
@@ -865,6 +867,10 @@ e {
   height: 60vh;
 }
 
+#connectM {
+  display: none;
+}
+
 .conCont,
 .conGlow {
   position: absolute;
@@ -881,7 +887,6 @@ e {
 
 .conGlow {
   overflow: hidden;
-  /* Glow Blur */
   filter: blur(20px);
 }
 
@@ -898,13 +903,11 @@ e {
   height: 99999px;
   background-repeat: no-repeat;
   background-position: 0 0;
-  /*border color, change middle color*/
   background-image: conic-gradient(
     rgba(0, 0, 0, 0),
     var(--themePrimary),
     rgba(0, 0, 0, 0) 25%
   );
-  /* change speed here */
   animation: rotate 4s linear infinite;
 }
 
@@ -912,15 +915,11 @@ e {
   content: "";
   position: absolute;
   z-index: -1;
-  /* border width */
   left: 5px;
   top: 5px;
-  /* double the px from the border width left */
   width: calc(100% - 10px);
   height: calc(100% - 10px);
-  /*bg color*/
   background: var(--darkBgSecondary);
-  /*box border radius*/
   border-radius: 20px;
 }
 
@@ -1038,8 +1037,11 @@ footer a {
   header button {
     font-size: 1.4rem;
   }
-  nav ul {
+  nav li {
     display: none;
+  }
+  .profileCont {
+    margin: 40px 0;
   }
   .profileDec {
     height: 160px;
@@ -1047,7 +1049,10 @@ footer a {
   }
 
   #dec1 {
-    transform: translate(-40px, px);
+    transform: translate(-40px, 20px);
+  }
+  #dec2 {
+    transform: translate(80px, -180px);
   }
 
   .devBtn {
@@ -1136,7 +1141,7 @@ footer a {
     margin-left: 0;
     padding-left: 0;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     margin-top: 50px;
   }
   .proCont {
@@ -1155,6 +1160,29 @@ footer a {
     display: flex;
     align-items: center;
     margin-top: 30px;
+  }
+
+  #connect {
+    display: none;
+  }
+  #connectM {
+    background-color: var(--darkBgSecondary);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto 75px auto;
+    width: 90%;
+  }
+  #connectM img {
+    height: 30vh;
+    margin: 25px auto;
+  }
+  .connectMText {
+    margin: 0 20px;
+  }
+  #connectM .social a {
+    margin: 0 3px;
   }
   #circle5 {
     display: none;
