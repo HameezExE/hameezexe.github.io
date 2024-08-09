@@ -429,6 +429,10 @@ header button {
   margin-bottom: 27px;
 }
 
+.taglineM {
+  display: none;
+}
+
 .highlighted {
   background-image: linear-gradient(
     45deg,
@@ -1048,6 +1052,28 @@ footer a {
     height: 200px;
   }
 
+  .tagline {
+    display: none;
+  }
+
+  .taglineM {
+    display: block;
+    font-size: 3rem;
+    line-height: 4.2rem;
+    font-weight: 600;
+    margin-bottom: 27px;
+    text-align: center;
+  }
+
+  .heroText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-align: justify;
+  }
+
   .heroCTA {
     display: none;
   }
@@ -1071,7 +1097,10 @@ footer a {
     flex-direction: column-reverse;
   }
   .proText {
-    width: 90%;
+    width: 100%;
+  }
+  .circle5 {
+    display: none;
   }
 }
 
@@ -1083,12 +1112,5 @@ footer a {
   .heroContent img {
     height: 200px;
     margin: 50px 0 20px 0;
-  }
-  .heroText {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 }
