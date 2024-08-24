@@ -52,8 +52,8 @@
         <div id="headerContainer">
           <header>
             <a href=""
-              ><h1>M<span class="H">H</span></h1></a
-            >
+              ><img src="./assets/hameezLogoLight.png" class="logoImg" alt=""
+            /></a>
             <nav>
               <ul>
                 <li class="active"><a href="">About</a></li>
@@ -589,15 +589,22 @@
 
       let lightMode = localStorage.getItem("lightMode");
       const lightModeToggle = document.querySelector("#lightModeToggle");
+      const logo = document.querySelector(".logoImg");
 
       const enableLightMode = () => {
         document.body.classList.add("lightMode");
         localStorage.setItem("lightMode", "enabled");
+        if (logo.getAttribute("src") === "./assets/hameezLogoLight.png") {
+          logo.setAttribute("src", "./assets/hameezLogoDark.png");
+        }
       };
 
       const disableLightMode = () => {
         document.body.classList.remove("lightMode");
         localStorage.setItem("lightMode", "disabled");
+        if (logo.getAttribute("src") === "./assets/hameezLogoDark.png") {
+          logo.setAttribute("src", "./assets/hameezLogoLight.png");
+        }
       };
 
       if (lightMode === "enabled") {
